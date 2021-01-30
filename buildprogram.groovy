@@ -5,7 +5,7 @@ def buildMyCode(def url, def branch)
   
 def maven = tool 'maven_software'  
 
-  bat "${maven}/mvn clean install"
+  bat "${maven}/bin/mvn clean install"
 
 bat " mv target/*.war  c:/tomcat/"
 
