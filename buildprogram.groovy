@@ -7,7 +7,7 @@ def maven = tool 'maven_software'
 
   bat "${maven}/bin/mvn clean install"
 
-bat " mv target/*.war  c:/tomcat/"
+bat " move target/*.war  c:/tomcat/"
 
 
 }
